@@ -4,10 +4,10 @@ import logoForDarkBg from "../../assets/images/logo light.png";
 import logoForLightBg from "../../assets/images/logo dark.png";
 
 interface Props {
-  scrolled: boolean;
+  scrolled?: boolean;
 }
 
-const Logo = ({ scrolled }: Props) => {
+const Logo = ({ scrolled = true }: Props) => {
   return (
     <motion.a
       href="#home"

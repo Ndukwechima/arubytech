@@ -16,6 +16,7 @@ const MobileMenu = ({ open, scrolled }: Props) => {
 absolute
 top-full
 left-0
+right-0
 w-full
 
 lg:hidden
