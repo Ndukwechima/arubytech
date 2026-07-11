@@ -1,8 +1,6 @@
 import { Menu, X } from "lucide-react";
-
 import { useState } from "react";
-
-import { AnimatePresence,} from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 
 import Logo from "./Logo";
 import DesktopNav from "./DesktopNav";
@@ -20,50 +18,42 @@ const Header = () => {
   return (
     <header
       className={`
-fixed
-top-0
-left-0
-z-50
-w-full
-transition-all
-duration-300
+      sticky
+      top-0
+      left-0
+      right-0
+      z-50
+      w-full
+      transition-all
+      duration-300
 
-${
-  scrolled
-    ? " bg-[#091123] "
-    : "bg-transparent backdrop-blur-md shadow-lg md:border-b border-border"
-}
+      ${scrolled ? "bg-[#091123] shadow-lg" : "bg-white"}
 
-`}
+      `}
     >
       <Container>
         <div
           className="
-flex
-h-20
-items-center
-justify-between
-"
+          flex
+          h-20
+          items-center
+          justify-between
+          "
         >
-          <Logo />
+          <Logo scrolled={scrolled} />
 
-          <DesktopNav />
+          <DesktopNav scrolled={scrolled} />
 
-          <div
-            className="
-hidden
-lg:block
-"
-          >
+          <div className="hidden lg:block">
             <Button>Let's Talk</Button>
           </div>
 
           <button
             onClick={() => setOpen(!open)}
-            className="
-text-white
-lg:hidden
-"
+            className={`
+            lg:hidden
+            ${scrolled ? "text-white" : "text-primary-navy"}
+            `}
           >
             {open ? <X size={28} /> : <Menu size={28} />}
           </button>
@@ -71,7 +61,7 @@ lg:hidden
       </Container>
 
       <AnimatePresence>
-        <MobileMenu open={open} />
+        <MobileMenu open={open} scrolled={scrolled} />
       </AnimatePresence>
     </header>
   );

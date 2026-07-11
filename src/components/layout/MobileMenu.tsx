@@ -1,34 +1,28 @@
-import { navigationLinks } from "../../data/navigation";
-import { motion } from "framer-motion";
-import Button from "../ui/Button";
+ import { navigationLinks } from "../../data/navigation";
+ import { motion } from "framer-motion";
+ import Button from "../ui/Button";
 
 interface Props {
   open: boolean;
+  scrolled: boolean;
 }
 
-const MobileMenu = ({ open }: Props) => {
+const MobileMenu = ({ open, scrolled }: Props) => {
   if (!open) return null;
 
   return (
     <motion.div
-      initial={{
-        opacity: 0,
-        height: 0,
-      }}
-      animate={{
-        opacity: 1,
-        height: "auto",
-      }}
-      className="
+      className={`
 absolute
 top-full
 left-0
 w-full
-bg-primary-navy
-border-t
-border-border
+
 lg:hidden
-"
+
+${scrolled ? "bg-[#091123] border-t border-[#202f54]" : "bg-[#e9edf7] border-t border-[#d9e0f1]"}
+
+`}
     >
       <div
         className="
@@ -43,10 +37,12 @@ py-8
           <a
             key={link.name}
             href={link.href}
-            className="
+            className={`
 font-inter
-text-white
-"
+
+${scrolled ? "text-white" : "text-primary-navy"}
+
+`}
           >
             {link.name}
           </a>

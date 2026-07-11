@@ -1,7 +1,13 @@
 import { motion } from "framer-motion";
-import logo from "../../assets/images/logo light.png";
 
-const Logo = () => {
+import logoForDarkBg from "../../assets/images/logo light.png";
+import logoForLightBg from "../../assets/images/logo dark.png";
+
+interface Props {
+  scrolled: boolean;
+}
+
+const Logo = ({ scrolled }: Props) => {
   return (
     <motion.a
       href="#home"
@@ -11,12 +17,14 @@ const Logo = () => {
       className="flex items-center"
     >
       <img
-        src={logo}
+        src={scrolled ? logoForDarkBg : logoForLightBg}
         alt="ArubyTech Logo"
         className="
-          h-36
-          w-auto
-          object-contain
+        h-36
+        w-auto
+        object-contain
+        transition-all
+        duration-300
         "
       />
     </motion.a>
