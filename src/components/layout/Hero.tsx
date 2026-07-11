@@ -4,7 +4,8 @@ import HeroImage from "../../assets/images/portfolio heroImg.png"
 
 const Hero = () => {
   return (
-    <section className="bg-gradient-to-b from-primary-navy  to-[#071021]  min-h-screen flex items-center border-b border-b-primary-navy/50">
+    <section className="bg-linear-to-b from-primary-navy  to-[#071021]  
+    min-h-screen flex items-center border-b border-b-primary-navy/50">
       <div className="container mx-auto px-6 lg:px-12 py-20">
         <div className="grid items-center gap-16 lg:grid-cols-2">
           {/* ================= Left Content ================= */}

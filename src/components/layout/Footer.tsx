@@ -1,4 +1,5 @@
 import { Mail, Phone, MapPin } from "lucide-react";
+import { FaLinkedin, FaGithub, FaXTwitter, FaFacebook } from "react-icons/fa6";
 import Logo from "./Logo";
 
 const quickLinks = ["Home", "About", "Services", "Portfolio", "Contact"];
@@ -178,6 +179,38 @@ const Footer = () => {
                 <MapPin className="h-5 w-5" />
                 Nigeria
               </p>
+
+              <div
+                className="
+            mt-10
+            flex
+            gap-4
+            "
+              >
+                {[FaLinkedin, FaGithub, FaXTwitter, FaFacebook].map(
+                  (Icon, index) => (
+                    <a
+                      key={index}
+                      href="#"
+                      className="
+                  flex
+                  h-10
+                  w-10
+                  items-center
+                  justify-center
+                  rounded-full
+                  bg-white/10
+                  text-white
+                  transition
+                  hover:bg-gold-accent
+                  hover:text-primary-navy
+                  "
+                    >
+                      <Icon className="h-5 w-5" />
+                    </a>
+                  )
+                )}
+              </div>
             </div>
           </div>
         </div>

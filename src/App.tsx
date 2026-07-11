@@ -1,4 +1,5 @@
 import About from "./components/layout/About";
+import Contact from "./components/layout/Contact";
 import FAQ from "./components/layout/Faq";
 import FinalCTA from "./components/layout/FinalCTA";
 import Footer from "./components/layout/Footer";
@@ -35,6 +36,7 @@ return(
 <Testimonials />
 <FAQ />
 <FinalCTA />
+<Contact />
 <Footer />
 
 </section>

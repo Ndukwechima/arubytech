@@ -2,7 +2,7 @@ import { Menu, X } from "lucide-react";
 
 import { useState } from "react";
 
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence,} from "framer-motion";
 
 import Logo from "./Logo";
 import DesktopNav from "./DesktopNav";
@@ -18,16 +18,7 @@ const Header = () => {
   const scrolled = useScroll();
 
   return (
-    <motion.header
-      initial={{
-        y: -100,
-      }}
-      animate={{
-        y: 0,
-      }}
-      transition={{
-        duration: 0.6,
-      }}
+    <header
       className={`
 fixed
 top-0
@@ -40,7 +31,7 @@ duration-300
 ${
   scrolled
     ? " bg-[#091123] "
-    : "bg-transparent backdrop-blur-md shadow-lg border-b border-border"
+    : "bg-transparent backdrop-blur-md shadow-lg md:border-b border-border"
 }
 
 `}
@@ -82,7 +73,7 @@ lg:hidden
       <AnimatePresence>
         <MobileMenu open={open} />
       </AnimatePresence>
-    </motion.header>
+    </header>
   );
 };
 
