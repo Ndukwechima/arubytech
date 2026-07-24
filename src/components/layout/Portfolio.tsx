@@ -18,7 +18,7 @@ const projects = [
     technologies: ["React", "Tailwind CSS", "Framer Motion"],
     description:
       "A high-converting real estate website featuring property highlights, agent information, customer testimonials, and clear call-to-action sections to increase inquiries and bookings.",
-    live: "#",
+    live: "https://luxity-real-estate-landing-page.vercel.app/",
     caseStudy: "#",
   },
 
@@ -29,7 +29,7 @@ const projects = [
     technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
     description:
       "A clean and visually engaging landing page designed to highlight Lumora's skincare products, communicate the brand's values, and encourage visitors to explore the product collection.",
-    live: "#",
+    live: "https://skincare-landing-page-ivory.vercel.app/",
     caseStudy: "#",
   },
 
@@ -40,7 +40,7 @@ const projects = [
     technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
     description:
       "A conversion-focused landing page built for a personal fitness trainer to attract new clients through compelling service highlights, success stories, and clear calls to action for booking one-on-one coaching sessions.",
-    live: "#",
+    live: "https://fitness-landing-page-lovat.vercel.app/",
     caseStudy: "#",
   },
 
@@ -51,7 +51,7 @@ const projects = [
     technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
     description:
       "A high-converting business website created to improve online presence, build trust, and generate customer enquiries.",
-    live: "#",
+    live: "https://www.ushaseer.com/",
     caseStudy: "#",
   },
 
@@ -62,7 +62,7 @@ const projects = [
     technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
     description:
       "A modern hotel landing page designed to showcase comfortable accommodations, premium amenities, and exceptional guest experiences while encouraging visitors to book their stay with confidence.",
-    live: "#",
+    live: "https://hungsmeal-landing-page.vercel.app/",
     caseStudy: "#",
   },
 
@@ -73,7 +73,7 @@ const projects = [
     technologies: ["React", "Framer Motion", "Tailwind CSS"],
     description:
       "A professional portfolio platform focused on showcasing skills, projects, and creating strong personal branding.",
-    live: "#",
+    live: "https://arubytech.vercel.app/",
     caseStudy: "#",
   },
   {
@@ -83,7 +83,7 @@ const projects = [
     technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
     description:
       "A high-converting wellness landing page built to highlight VitaBoost's value proposition, showcase product benefits, build credibility through testimonials, and drive customer engagement with strategic calls to action.",
-    live: "#",
+    live: "https://vitaboost-landing-page.vercel.app/",
     caseStudy: "#",
   },
 ];
@@ -208,7 +208,7 @@ const Portfolio = () => {
                 {/* Buttons */}
 
                 <div className="mt-8 flex flex-wrap gap-4">
-                  <a
+                  <a 
                     href={project.live}
                     className="
                     inline-flex

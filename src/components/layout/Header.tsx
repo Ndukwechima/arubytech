@@ -18,7 +18,7 @@ const Header = () => {
   return (
     <header
       className={`
-      sticky
+      fixed
       top-0
       left-0
       right-0
@@ -27,7 +27,11 @@ const Header = () => {
       transition-all
       duration-300
 
-      ${scrolled ? "bg-[#091123] shadow-lg" : "bg-white"}
+      ${
+        scrolled
+          ? "bg-[#091123]  shadow-lg"
+          : "bg-white"
+      }
 
       `}
     >
