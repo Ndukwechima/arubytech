@@ -141,7 +141,7 @@ const Footer = () => {
             "
             >
               <a
-                href="mailto:hello@example.com"
+                href="mailto:chimandukwe.r@gmail.com"
                 className="
                 flex
                 items-center
@@ -151,11 +151,11 @@ const Footer = () => {
                 "
               >
                 <Mail className="h-5 w-5" />
-                hello@example.com
+                chimandukwe.r@gmail.com
               </a>
 
               <a
-                href="tel:+123456789"
+                href="tel:+2348106706460"
                 className="
                 flex
                 items-center

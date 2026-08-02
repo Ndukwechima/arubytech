@@ -32,7 +32,7 @@ const industries = [
 
 const About = () => {
   return (
-    <section className="bg-white py-24">
+    <section id="about" className="bg-white py-24">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="grid items-center gap-16 lg:grid-cols-2">
           {/* Image */}

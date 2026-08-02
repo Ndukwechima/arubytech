@@ -90,7 +90,7 @@ const projects = [
 
 const Portfolio = () => {
   return (
-    <section className="bg-light-gray py-24">
+    <section id="portfolio" className="bg-light-gray py-24">
       <div className="container mx-auto px-6 lg:px-12">
         {/* Heading */}
         <div className="mx-auto max-w-3xl text-center">
@@ -129,8 +129,7 @@ const Portfolio = () => {
               transition={{
                 duration: 0.7,
               }}
-              className='grid items-center gap-12 lg:grid-cols-2'
-               
+              className="grid items-center gap-12 lg:grid-cols-2"
             >
               {/* Screenshot */}
               <div className="group overflow-hidden rounded-3xl shadow-xl">
@@ -208,7 +207,7 @@ const Portfolio = () => {
                 {/* Buttons */}
 
                 <div className="mt-8 flex flex-wrap gap-4">
-                  <a 
+                  <a
                     href={project.live}
                     className="
                     inline-flex

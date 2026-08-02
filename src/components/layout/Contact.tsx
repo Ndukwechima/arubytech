@@ -99,19 +99,19 @@ const Contact = () => {
                 <div className="flex gap-4">
                   <Mail className="text-gold-accent" />
 
-                  <p className="text-body-text">hello@yourdomain.com</p>
+                  <p className="text-body-text">chimandukwe.r@gmail.com</p>
                 </div>
 
                 <div className="flex gap-4">
                   <Phone className="text-gold-accent" />
 
-                  <p className="text-body-text">+234 XXX XXX XXXX</p>
+                  <p className="text-body-text">+234 81 0670 6460</p>
                 </div>
 
                 <div className="flex gap-4">
                   <MapPin className="text-gold-accent" />
 
-                  <p className="text-body-text">Nigeria</p>
+                  <p className="text-body-text">Ghana</p>
                 </div>
               </div>
 

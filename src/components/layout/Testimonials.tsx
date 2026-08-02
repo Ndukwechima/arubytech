@@ -43,7 +43,7 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="bg-primary-navy py-24">
+    <section id="testimonials" className="bg-primary-navy py-24">
       <div className="container mx-auto px-6 lg:px-12">
         {/* Heading */}
 

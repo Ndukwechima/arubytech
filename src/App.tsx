@@ -2,6 +2,7 @@ import About from "./components/layout/About";
 import Contact from "./components/layout/Contact";
 import FAQ from "./components/layout/Faq";
 import FinalCTA from "./components/layout/FinalCTA";
+import FloatingWhatsApp from "./components/layout/FloatingWhatsApp";
 import Footer from "./components/layout/Footer";
 import Header from "./components/layout/Header";
 import Hero from "./components/layout/Hero";
@@ -38,6 +39,7 @@ return(
 <FinalCTA />
 <Contact />
 <Footer />
+<FloatingWhatsApp />
 
 </section>
 </main>

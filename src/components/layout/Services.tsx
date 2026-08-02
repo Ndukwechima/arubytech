@@ -92,7 +92,7 @@ const serviceGroups = [
 
 const Services = () => {
   return (
-    <section className="bg-primary-navy py-24">
+    <section id="services" className="bg-primary-navy py-24">
       <div className="container mx-auto px-6 lg:px-12">
         {/* Heading */}
         <div className="mx-auto max-w-3xl text-center">
